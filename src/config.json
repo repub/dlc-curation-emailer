@@ -1,0 +1,43 @@
+{
+    "preamble":"<p>Dear NAME</p><p>I manage deposits to ScholarSphere</p>",
+    "postscript":"<p>If you have any questions or concerns, please contact me.</p>",
+    "groups": [
+        {
+            "name": "required",
+            "preamble": "Please address the following issues"
+        },{
+            "name": "suggestion",
+            "preamble": "We strongly encourage the following"
+        },{
+            "name": "correction",
+            "preamble": "We have made the following changes"
+        }
+    ],
+    "items": [
+        {
+            "label": "Files with signatures",
+            "value": "Documents with signatures are not accepted on ScholarSphere. We have temporarily removed public access to your deposit. Please upload files with signature(s) removed and we will restore access to the deposit",
+            "group": "required"
+        },{
+            "label": "File(s) with sensitive information",
+            "value": "Information with a Sensitive Information Classification of Moderate (Level 2) or higher according to <a href='https://policy.psu.edu/policies/ad95'>Penn State Policy AD95 Information Assurance and IT Security</a> is not permitted in ScholarSphere. We have removed public access to these files. Please provide file(s) with the sensitive information removed.",
+            "group": "required"
+        },{
+            "label":"Penn State Only Access & AC02",
+            "value":"Articles deposited with the Penn State Only Access setting do not satisfy Penn State's Open Access to Scholarly Articles Policy (AC02) requirements. To satisfy the policy, consider changing the Access setting to Public. You can do this through the Work Settings page.",
+            "group":"suggestion"
+        },{
+            "label":"Article Version Problem (Published Version)",
+            "value":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow sharing the published version on institutional repositores. To satisfy both the publisher's policy and Penn State's Open Access Policy (AC02),you may need to upload the accepted version instead. Find out more ...",
+            "group":"suggestion"
+        },{
+            "label":"DOI Corrected",
+            "value":"We found the publisher's DOI for this deposit and included it in the record metadata",
+            "group": "correction"
+        },{
+            "label":"Authors/Creators Corrected",
+            "value": "We updated the creators to reflect authorship information included in the deposited material",
+            "group": "correction"
+        }
+    ]
+}
