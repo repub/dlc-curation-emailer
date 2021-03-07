@@ -1,13 +1,13 @@
 {
-    "preamble":"<p>Dear NAME</p><p>I manage deposits to ScholarSphere</p>",
-    "postscript":"<p>If you have any questions or concerns, please contact me.</p>",
+    "preamble":"<p>Dear ____, </p><p>Thank you for your recent ScholarSphere deposit [link]. After we receive a submission, we review it to ensure that it is as complete, accessible, and understandable as possible. If we identified any required or suggested changes for you to make, or if we made any corrections ourselves, they are outlined below.</p>",
+    "postscript":"<p>Please let us know if you have any questions or concerns. We would be happy to discuss our review of your submission should you wish to do so.</p><p>Sincerely,<br/>______</p>",
     "groups": [
         {
             "name": "required",
-            "preamble": "The following issues must be addressed immediately to satistfy <a href='https://scholarsphere.psu.edu/policies#requirements-for-deposit'>ScholarSphere's requirements for deposit</a>:"
+            "preamble": "The following issue(s) must be addressed immediately to satisfy <a href='https://scholarsphere.psu.edu/policies#requirements-for-deposit'>ScholarSphere's requirements for deposit</a>:"
         },{
             "name": "suggestion",
-            "preamble": "To improve the long-term value and re-use potental of this material, we strongly encourage the following changes:"
+            "preamble": "To make the submission more complete, accessible, and understandable in the long-term, we strongly encourage the following changes:"
         },{
             "name": "correction",
             "preamble": "In accordance with <a href='https://scholarsphere.psu.edu/policies#curation-policy'>ScholarSphere's curation policy</a>, we corrected the deposit metadata as follows:"
@@ -16,11 +16,15 @@
     "items": [
         {
             "label": "Remove files with signatures",
-            "value": "Documents with signatures are not accepted on ScholarSphere. We have temporarily removed public access to your deposit. Please upload files with signature(s) removed and we will restore access to the deposit",
+            "value": "Documents with signatures are not accepted on ScholarSphere. We have temporarily removed public access to your deposit. Please upload files with signature(s) removed and we will restore access to the deposit.",
             "group": "required"
         },{
             "label": "Remove file(s) with sensitive information",
             "value": "Information with a Sensitive Information Classification of Moderate (Level 2) or higher according to <a href='https://policy.psu.edu/policies/ad95'>Penn State Policy AD95 Information Assurance and IT Security</a> is not permitted in ScholarSphere. We have removed public access to these files. Please provide file(s) with the sensitive information removed.",
+            "group": "required"
+        },{
+            "label": "Other Requirment",
+            "value": "requirement description...",
             "group": "required"
         },{
             "label":"Change Access Setting for Open Access Policy",
@@ -28,27 +32,35 @@
             "group":"suggestion"
         },{
             "label":"Upload Accepted Version",
-            "value":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow sharing the published version on institutional repositores. To satisfy both the publisher's policy and Penn State's Open Access Policy (AC02),you may need to upload the accepted version instead. Find out more ...",
+            "value":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow sharing the published version on institutional repositories. To satisfy both the publisher's policy and Penn State's Open Access Policy (AC02),you may need to upload the accepted version instead. Find out more ...",
             "group":"suggestion"
         },{
             "label":"Upload README.txt",
-            "value":"Consider adding a README file documenting your dataset/code. A suggested template for your README can be found <a href=''>here</a>.",
+            "value":"Consider adding a README file to document your dataset or code. A guide with a README template is available <a href='https://github.com/psu-stewardship/scholarsphere/wiki/README-Guide'>here</a>.",
             "group": "suggestion"
         },{
             "label":"Create a DOI",
-            "value":"If you plan reference this material in a published article (in a data availability statement, for example), you should create a persistent identifier (DOI) for it. You can create a DOI for the data through the work settings page. Then you'll want to include that DOI in your paper, in the data availability statement or such.",
+            "value":"If you plan to reference this material in a publication, you should create a persistent identifier (DOI) for its citation. You can create a DOI for your submission through the \"Work Settings\" page.",
+            "group": "suggestion"
+        },{
+            "label":"Other Suggestion",
+            "value":"suggestion description ...",
             "group": "suggestion"
         },{
             "label":"Corrections to the DOI",
-            "value":"We found the publisher's DOI for this deposit and included it in the record metadata",
+            "value":"We found the publisher's DOI for the deposited material and we included it in the record metadata",
             "group": "correction"
         },{
             "label": "Corrections to Authors/Creators",
-            "value": "We updated the deposit's authors/creators metadata based on information found in the uploaded materials.",
+            "value": "We updated the deposit's authors/creators metadata based on information in the uploaded files.",
             "group": "correction"
         },{
             "label":"Corrections to Descriptive Metadata",
-            "value": "We updated the deposit title, publication date, keywords, subject, or other metadata based on information found in the uploaded materials.",
+            "value": "We updated the deposit title, publication date, keywords, subject, or other metadata based on information in the uploaded files.",
+            "group": "correction"
+        },{
+            "label":"Other Correction",
+            "value":"correction description ...",
             "group": "correction"
         }
     ]
