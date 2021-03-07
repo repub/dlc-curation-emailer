@@ -6,24 +6,46 @@
 <script>
 	import Select from 'svelte-select';
 	import Config from './config.json';
-	let selections = {};
-	for(let g of Config.groups){
-		selections[g.name] = [];
+
+	// prop for url search params: ?select=opt1,opt2
+	export let searchParams = [];
+
+	// initial Config.items from searchParams
+	let initialSelections = [];
+	for(let v of searchParams){
+		for (let i of Config.items){
+			if (i.value == v){
+				initialSelections = [...initialSelections,i]
+			}
+		}
 	}
-	function handleSelect(event) {
+
+	// actual selection stored here
+	let selections = {};
+	setSelections(initialSelections);
+
+	// link for this set of selections
+	$: link = searchParams.join(",")
+
+	function setSelections(items){
 		for(let g of Config.groups){
 			selections[g.name] = [];
+			searchParams = [];
 		}
-		if(!event.detail){
+		if(!items){
 			return;
 		}
-		for (let select of event.detail){
+		for (let select of items){
 			for(let g of Config.groups){
 				if (select.group == g.name) {
 					selections[g.name] = [...selections[g.name], select];
+					searchParams = [...searchParams, select.value]
 				}
 			}
 		}
+	}
+	function handleSelect(event) {
+		setSelections(event.detail)
 	}
 	const groupBy = (item) => item.group;
 </script>
@@ -55,7 +77,7 @@
 
 <div class="app-container">
 	<div class="email-select">
-		<Select items={Config.items} on:select={handleSelect} isMulti={true} {groupBy}></Select>
+		<Select items={Config.items} selectedValue={initialSelections} on:select={handleSelect} isMulti={true} {groupBy}></Select>
 	</div>
 	<div class="email-text">
 		{@html Config.preamble}
@@ -71,5 +93,9 @@
 		{/each}
 		{@html Config.postscript}
 	</div>
+	<div class="tools">
+		<a href="?select={ link }">link</a>
+	</div>
+
 
 </div>

@@ -16,51 +16,63 @@
     "items": [
         {
             "label": "Remove files with signatures",
-            "value": "Documents with signatures are not accepted on ScholarSphere. We have temporarily removed public access to your deposit. Please upload files with signature(s) removed and we will restore access to the deposit.",
+            "value":"required_signature",
+            "description": "Documents with signatures are not accepted on ScholarSphere. We have temporarily removed public access to your deposit. Please upload files with signature(s) removed and we will restore access to the deposit.",
             "group": "required"
         },{
             "label": "Remove file(s) with sensitive information",
-            "value": "Information with a Sensitive Information Classification of Moderate (Level 2) or higher according to <a href='https://policy.psu.edu/policies/ad95'>Penn State Policy AD95 Information Assurance and IT Security</a> is not permitted in ScholarSphere. We have removed public access to these files. Please provide file(s) with the sensitive information removed.",
+            "value":"required_sensitive",
+            "description": "Information with a Sensitive Information Classification of Moderate (Level 2) or higher according to <a href='https://policy.psu.edu/policies/ad95'>Penn State Policy AD95 Information Assurance and IT Security</a> is not permitted in ScholarSphere. We have removed public access to these files. Please provide file(s) with the sensitive information removed.",
             "group": "required"
         },{
-            "label": "Other Requirment",
-            "value": "requirement description...",
+            "label": "Other Requirement",
+            "value":"required_other",
+            "description": "requirement description...",
             "group": "required"
         },{
             "label":"Change Access Setting for Open Access Policy",
-            "value":"Articles deposited with the Penn State Only Access setting do not satisfy Penn State's Open Access to Scholarly Articles Policy (AC02) requirements. To satisfy the policy, consider changing the Access setting to Public. You can do this through the Work Settings page.",
+            "value":"suggestion_access",
+            "description":"Articles deposited with the Penn State Only Access setting do not satisfy Penn State's Open Access to Scholarly Articles Policy (AC02) requirements. To satisfy the policy, consider changing the Access setting to Public. You can do this through the Work Settings page.",
             "group":"suggestion"
         },{
             "label":"Upload Accepted Version",
-            "value":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow sharing the published version on institutional repositories. To satisfy both the publisher's policy and Penn State's Open Access Policy (AC02),you may need to upload the accepted version instead. Find out more ...",
+            "value":"suggestion_accepted_version",
+            "description":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow sharing the published version on institutional repositories. To satisfy both the publisher's policy and Penn State's Open Access Policy (AC02),you may need to upload the accepted version instead. Find out more ...",
             "group":"suggestion"
         },{
             "label":"Upload README.txt",
-            "value":"Consider adding a README file to document your dataset or code. A guide with a README template is available <a href='https://github.com/psu-stewardship/scholarsphere/wiki/README-Guide'>here</a>.",
+            "value":"suggestion_readme",
+            "description":"Consider adding a README file to document your dataset or code. A guide with a README template is available <a href='https://github.com/psu-stewardship/scholarsphere/wiki/README-Guide'>here</a>.",
             "group": "suggestion"
         },{
             "label":"Create a DOI",
-            "value":"If you plan to reference this material in a publication, you should create a persistent identifier (DOI) for its citation. You can create a DOI for your submission through the \"Work Settings\" page.",
+            "value":"suggestion_doi",
+            "description":"If you plan to reference this material in a publication, you should create a persistent identifier (DOI) for its citation. You can create a DOI for your submission through the \"Work Settings\" page.",
             "group": "suggestion"
         },{
             "label":"Other Suggestion",
-            "value":"suggestion description ...",
+            "value":"suggestion_other",
+            "description":"suggestion description ...",
             "group": "suggestion"
         },{
             "label":"Corrections to the DOI",
-            "value":"We found the publisher's DOI for the deposited material and we included it in the record metadata",
+            "value":"correction_doi",
+            "description":"We found the publisher's DOI for the deposited material and we included it in the record metadata",
             "group": "correction"
         },{
             "label": "Corrections to Authors/Creators",
-            "value": "We updated the deposit's authors/creators metadata based on information in the uploaded files.",
+            "value":"correction_authors",
+            "description": "We updated the deposit's authors/creators metadata based on information in the uploaded files.",
             "group": "correction"
         },{
             "label":"Corrections to Descriptive Metadata",
-            "value": "We updated the deposit title, publication date, keywords, subject, or other metadata based on information in the uploaded files.",
+            "value":"correction_metadata",
+            "description": "We updated the deposit title, publication date, keywords, subject, or other metadata based on information in the uploaded files.",
             "group": "correction"
         },{
             "label":"Other Correction",
-            "value":"correction description ...",
+            "value":"correction_other",
+            "description":"correction description ...",
             "group": "correction"
         }
     ]
