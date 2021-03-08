@@ -17,7 +17,7 @@
         {
             "label": "Remove files with signatures",
             "value":"required_signature",
-            "description": "Documents with signatures are not accepted on ScholarSphere. We have temporarily removed public access to your deposit. Please upload files with signature(s) removed and we will restore access to the deposit.",
+            "description": "Documents with signatures are not accepted on ScholarSphere. We may remove public access to your deposit. Please upload files with signature(s) removed.",
             "group": "required"
         },{
             "label": "Remove file(s) with sensitive information",
@@ -37,7 +37,7 @@
         },{
             "label":"Upload Accepted Version",
             "value":"suggestion_accepted_version",
-            "description":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow sharing the published version on institutional repositories. To satisfy both the publisher's policy and Penn State's Open Access Policy (AC02),you may need to upload the accepted version instead. Find out more ...",
+            "description":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow depositing the published version of an article on institutional repositories. Please consider uploading the <a href='https://psu.libanswers.com/faq/279953'>accepted manuscript version</a> instead; doing so will satisfy the Penn State Open Access Policy (AC02) requirement. Guidance for determining the best article version to deposit can be found on <a href='https://psu.libanswers.com/faq/279046'>this FAQ</a>.",
             "group":"suggestion"
         },{
             "label":"Upload README.txt",
@@ -57,7 +57,7 @@
         },{
             "label":"Corrections to the DOI",
             "value":"correction_doi",
-            "description":"We found the publisher's DOI for the deposited material and we included it in the record metadata",
+            "description":"We found the publisher's DOI for the deposited material and we included it in the record metadata.",
             "group": "correction"
         },{
             "label": "Corrections to Authors/Creators",
