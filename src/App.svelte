@@ -86,7 +86,7 @@
 				<p>{@html group.preamble}</p>
 				<ul>
 					{#each selections[group.name] as i}
-						<li><b>{i.label}</b>: {@html i.value}</li>
+						<li><b>{i.label}</b>: {@html i.description}</li>
 					{/each}
 				</ul>
 			{/if}
@@ -94,7 +94,7 @@
 		{@html Config.postscript}
 	</div>
 	<div class="tools">
-		<a href="?select={ link }">link</a>
+		<a href="?select={ link }">email link</a>
 	</div>
 
 
