@@ -34,5 +34,9 @@ npm run-script build
 git checkout gh-pages
 rm -rf build && mv public/build ./
 git commit -a -m "new build"
+git push
+
+# go back to main branch
+git checkout main
 ```
 
