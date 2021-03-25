@@ -35,7 +35,7 @@
             "description": "requirement description...",
             "group": "required"
         },{
-            "label":"Chance Access Setting for Open Access Articles",
+            "label":"Change Access Setting for Open Access Articles",
             "value":"suggestion_public_access_article",
             "description":"Articles deposited with the Penn State Only Access setting do not satisfy Penn State's Open Access to Scholarly Articles Policy (AC02) requirements. To satisfy the policy, consider changing the Access setting to Public. You can do this through the Work Settings page.",
             "group":"suggestion"
