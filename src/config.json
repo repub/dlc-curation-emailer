@@ -25,16 +25,26 @@
             "description": "Information with a Sensitive Information Classification of Moderate (Level 2) or higher according to <a href='https://policy.psu.edu/policies/ad95'>Penn State Policy AD95 Information Assurance and IT Security</a> is not permitted in ScholarSphere. We have removed public access to these files. Please provide file(s) with the sensitive information removed.",
             "group": "required"
         },{
+            "label": "Explain scholarly import",
+            "value":"required_scholarly",
+            "description": "ScholarSphere deposits must be of scholarly import, including publications, instructional materials, creative works, and research data produced in support of Penn State's teaching, learning, and research mission. The deposit does not appear to meet this requirement. Please provide a justification for the material to avoid its removal from the repository.",
+            "group": "required"
+        },{
             "label": "Other Requirement",
             "value":"required_other",
             "description": "requirement description...",
             "group": "required"
         },{
-            "label":"Change Access Setting for Open Access Policy",
-            "value":"suggestion_access",
+            "label":"Chance Access Setting for Open Access Articles",
+            "value":"suggestion_public_access_article",
             "description":"Articles deposited with the Penn State Only Access setting do not satisfy Penn State's Open Access to Scholarly Articles Policy (AC02) requirements. To satisfy the policy, consider changing the Access setting to Public. You can do this through the Work Settings page.",
             "group":"suggestion"
         },{
+            "label":"Change Access Setting to Public",
+            "value":"suggestion_public_access",
+            "description":"The \"Penn State\" access setting prevents the public from downloading your files. Please consider changing the access setting to \"Public\". Further, if you applied an open access license such as <a href=\"https://creativecommons.org/licenses/by/4.0/\">CC-BY 4.0</a> to the submission, the Libraries may change the access setting for this work given the permissions granted by the license.",
+            "group":"suggestion"
+        }, {
             "label":"Upload Accepted Version",
             "value":"suggestion_accepted_version",
             "description":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow depositing the published version of an article on institutional repositories. Please consider uploading the <a href='https://psu.libanswers.com/faq/279953'>accepted manuscript version</a> instead; doing so will satisfy the Penn State Open Access Policy (AC02) requirement. Guidance for determining the best article version to deposit can be found on <a href='https://psu.libanswers.com/faq/279046'>this FAQ</a>.",
