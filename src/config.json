@@ -60,6 +60,11 @@
             "description":"If you plan to reference this material in a publication, you should create a persistent identifier (DOI) for its citation. You can create a DOI for your submission through the \"Work Settings\" page.",
             "group": "suggestion"
         },{
+            "label": "Software License Used for Non-Software Content",
+            "value":"suggestion_nonsoftware_license",
+            "description": "The license you have selected (___) is for software source code, however your deposit does not include software source code. Please consider changing the license to a <a href='https://creativecommons.org/licenses/'>Creative Commons license</a>, which is more suitable for this material. You may create a new version with the updated license or, if you prefer, I can update the license on the current version.",
+            "group": "suggestion"
+        },{
             "label":"Other Suggestion",
             "value":"suggestion_other",
             "description":"suggestion description ...",
