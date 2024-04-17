@@ -1,5 +1,5 @@
 {
-    "preamble":"<p>Dear ____, </p><p>Thank you for your recent ScholarSphere deposit [link]. After we receive a submission, we review it to ensure that it is as complete, accessible, and understandable as possible. If we identified any required or suggested changes for you to make, or if we made any corrections ourselves, they are outlined below.</p>",
+    "preamble":"<p>Dear ____, </p><p>Thank you for your ScholarSphere deposit [link]. After we receive a submission, we review it to ensure that it is as complete, accessible, and understandable as possible. If we identified any required or suggested changes for you to make, they are outlined below.</p>",
     "postscript":"<p>Please let us know if you have any questions or concerns. We would be happy to discuss our review of your submission should you wish to do so.</p><p>Sincerely,<br/>______</p>",
     "groups": [
         {
@@ -7,17 +7,19 @@
             "preamble": "The following issue(s) must be addressed immediately to satisfy <a href='https://scholarsphere.psu.edu/policies#requirements-for-deposit'>ScholarSphere's requirements for deposit</a>:"
         },{
             "name": "suggestion",
-            "preamble": "To make the submission more complete, accessible, and understandable in the long-term, we strongly encourage the following changes:"
+            "preamble": "To improve your submission, we strongly encourage the following changes:"
         },{
             "name": "correction",
             "preamble": "In accordance with <a href='https://scholarsphere.psu.edu/policies#curation-policy'>ScholarSphere's curation policy</a>, we corrected the deposit metadata as follows:"
+        },{
+            "name": "withdrawal",
         }
     ],
     "items": [
         {
-            "label": "Remove files with signatures",
+            "label": "Remove file(s) with signatures",
             "value":"required_signature",
-            "description": "Documents with signatures are not accepted on ScholarSphere. We may remove public access to your deposit. Please upload files with signature(s) removed.",
+            "description": "Your file contains a signature on page ____. Documents with signatures are not accepted on ScholarSphere. Please upload files with signature(s) removed within two weeks or they will be removed on your behalf.",
             "group": "required"
         },{
             "label": "Remove file(s) with sensitive information",
@@ -47,12 +49,12 @@
         }, {
             "label":"Upload Accepted Version",
             "value":"suggestion_accepted_version",
-            "description":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow depositing the published version of an article on institutional repositories. Please consider uploading the <a href='https://psu.libanswers.com/faq/279953'>accepted manuscript version</a> instead; doing so will satisfy the Penn State Open Access Policy (AC02) requirement. Guidance for determining the best article version to deposit can be found on <a href='https://psu.libanswers.com/faq/279046'>this FAQ</a>.",
+            "description":"The uploaded file appears to be the published version of a journal article. Many publishers do not allow depositing the published version of an article in institutional repositories. Please consider uploading the <a href='https://psu.libanswers.com/faq/279953'>accepted manuscript version</a> instead; doing so will satisfy the Penn State Open Access Policy (AC02) requirement. Guidance for determining the best article version to deposit can be found on <a href='https://psu.libanswers.com/faq/279046'>this FAQ</a>.",
             "group":"suggestion"
         },{
             "label":"Upload README.txt",
             "value":"suggestion_readme",
-            "description":"Consider adding a README file to document your dataset or code. A guide with a README template is available <a href='https://github.com/psu-stewardship/scholarsphere/wiki/README-Guide'>here</a>.",
+            "description":"Readme files are required for datasets and code deposits. Please provide a README file to document your dataset or code. A guide with a README template is available <a href='https://github.com/psu-stewardship/scholarsphere/wiki/README-Guide'>here</a>.",
             "group": "suggestion"
         },{
             "label":"Create a DOI",
@@ -89,6 +91,14 @@
             "value":"correction_other",
             "description":"correction description ...",
             "group": "correction"
+        },{
+            "label": "For works facing withdrawal",
+            "value":"withdrawal_other",
+            "description": "<p>The file uploaded with your recent deposit to ScholarSphere [link] does not meet the repository’s policy requirements regarding scholarly materials. ScholarSphere deposits must be of scholarly import, including publications, instructional materials, creative works, and research data produced in support of Penn State's teaching, learning, and research mission. A file of scholarly import must be provided by [date] or this work will be withdrawn. [insert sentence about what specific outcome/file we are seeking].</p><p>
+Please note that if your work is withdrawn, it will no longer be accessible via ScholarSphere and you may no longer be in compliance with the university’s open access policy. Please contact the Office of Scholarly Communications and Copyright at openaccess@psu.edu if you have questions regarding Penn State’s open access policy, or the ScholarSphere curation team at scholarsphere@psu.edu if you need assistance in updating your deposit.</p>
+",
+            "group": "withdrawal"
+        },
         }
     ]
 }
